@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1312px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.detailsTitle {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--main);
+}
+
+.detailsRatingInfo {
+  display: flex;
+  gap: 10px;
+}
+.reviewsLink {
+  color: var(--main);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.detailsPrice {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--main);
+}
+
+.detailsGallery {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.detailsGallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.detailsDescription {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text);
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+.featuresHeader {
+  display: flex;
+  gap: 20px;
+}
+.wrappersDetails {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.wrappersDetailsLink {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--main);
+  text-decoration: none;
+  position: relative;
+}
+
+.wrappersDetailsItem {
+  list-style: none;
+}
+
+.wrappersDetailsLink:hover {
+  color: #333;
+}
+
+.activeTab {
+  color: #333;
+}
+
+.activeTab::after {
+  content: '';
+  position: absolute;
+  bottom: -23px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--button-hover);
+  width: 100%;
+}

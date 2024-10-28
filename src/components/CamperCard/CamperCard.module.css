@@ -1,0 +1,132 @@
+.camperCard {
+  margin-top: 30px;
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  background-color: var(--white);
+}
+
+.camperImage {
+  width: 300px;
+  object-fit: cover;
+  border-radius: 25px;
+  padding: 15px;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.camperCardContent {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.camperHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.camperTitle {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--main);
+}
+.priceContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.camperPrice {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--main);
+}
+.heartIcon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.camperInfo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 0;
+  margin-bottom: 10px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--main);
+}
+
+.camperLocation {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.reviewsLink {
+  color: var(--main);
+}
+
+.camperDescription {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text);
+}
+
+.camperFeatures {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--main);
+}
+
+.camperFeature {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: var(--badges);
+  border-radius: 15px;
+  font-size: 12px;
+  color: #333;
+}
+
+.showMoreButton {
+  background-color: var(--button);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.showMoreButton:hover {
+  background-color: var(--button-hover);
+}

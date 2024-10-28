@@ -1,0 +1,132 @@
+.filterContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 280px;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: var(--inputs);
+  border-radius: 10px;
+  padding: 0 20px;
+  width: fit-content;
+  box-sizing: border-box;
+  gap: 8px;
+}
+
+.iconLocation {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.input {
+  padding-top: 27px;
+  border: none;
+  font-size: 14px;
+  color: var(--main);
+  background-color: transparent;
+  outline: none;
+  width: auto;
+}
+
+.title {
+  margin-top: 30px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray);
+}
+.vehicleTitle {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--main);
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 24px;
+  margin-bottom: 10px;
+}
+
+.buttonsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.button {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button.active {
+  border-color: var(--button-hover);
+}
+
+.button img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 8px;
+}
+
+.searchBtn:hover {
+  background-color: var(--button-hover);
+}
+
+.buttonsContainer button img {
+  width: 24px;
+  height: 24px;
+}
+
+.buttonsContainer button.active {
+  border-color: var(--button-hover);
+}
+.button:hover {
+  border-color: var(--button-hover);
+  color: var(--main);
+}
+.filterContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 250px;
+}
+
+h3,
+h4 {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.searchBtn {
+  background-color: var(--button);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.searchBtn:hover {
+  background-color: var(--button-hover);
+}
