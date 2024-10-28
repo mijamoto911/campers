@@ -108,6 +108,7 @@ Copy code
 
 Folder Structure
 
+```
 campers/
 ├── public/ # Static files
 ├── src/
@@ -119,6 +120,7 @@ campers/
 │ ├── index.js # Entry point
 │ └── styles/ # CSS modules
 └── README.md # Project documentation
+```
 
 # Contributing
 
