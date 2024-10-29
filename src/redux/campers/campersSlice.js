@@ -1,4 +1,3 @@
-// campersSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 import { fetchCampers, fetchCamperById, bookCamper } from './campersOperations';
 

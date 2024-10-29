@@ -37,23 +37,11 @@ export const bookCamper = createAsyncThunk(
   'campers/bookCamper',
   async (bookingData, thunkAPI) => {
     try {
-      console.log(
-        'Дані для бронювання перед відправкою:',
-        JSON.stringify(bookingData)
-      );
       const { data } = await axios.post(`/bookings`, bookingData, {
         headers: { 'Content-Type': 'application/json' },
       });
       return data;
     } catch (error) {
-      console.error(
-        'Помилка при бронюванні:',
-        error.response?.data || error.message
-      );
-      console.error(
-        'Деталі помилки від сервера:',
-        JSON.stringify(error.response?.data)
-      );
       return thunkAPI.rejectWithValue(error.response?.data || error.message);
     }
   }
